@@ -4,87 +4,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Excel Data Analysis Portfolio</title>
+  <title>Pranjal Tiwari | Excel Data Analysis Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #4f46e5;
+      --accent: #6366f1;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: var(--bg);
+      color: var(--text);
     }
+
     header {
-      background-color: #3f51b5;
-      color: white;
-      padding: 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      padding: 3rem 1rem;
       text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
+
     header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: var(--muted);
     }
+
     section {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
     }
+
     .project {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-      padding: 1.5rem;
-      margin-bottom: 2rem;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      transition: transform 0.3s ease;
     }
+
+    .project:hover {
+      transform: translateY(-6px);
+    }
+
     .project img {
       width: 100%;
-      border-radius: 8px;
-      margin-bottom: 1rem;
+      border-radius: 12px;
+      margin-bottom: 1.2rem;
+      border: 2px solid var(--accent);
     }
+
     .project h2 {
-      margin-top: 0;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
     }
+
+    .project p {
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
     .project a {
       text-decoration: none;
-      color: #3f51b5;
+      color: var(--accent);
       font-weight: 600;
+      margin-right: 1rem;
     }
+
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #777;
+      color: var(--muted);
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Pranjal Tiwari's Excel Portfolio</h1>
-    <p>Showcasing my data analysis dashboards and insights using Excel</p>
+    <p>Crafting insights & dashboards from raw data using Excel</p>
   </header>
 
   <section>
     <div class="project">
-      <img src="cover-placeholder.png" alt="Project Screenshot" />
+      <img src="cover-placeholder.png" alt="Sales Dashboard Screenshot" />
       <h2>Sales Performance Dashboard</h2>
       <p>This dashboard analyzes sales trends by product, region, and time using pivot tables, slicers, and charts.</p>
-      <p><a href="#">View on GitHub</a> | <a href="#">View on Kaggle</a></p>
+      <p><a href="#">GitHub</a> <a href="#">Kaggle</a></p>
     </div>
 
     <div class="project">
-      <img src="cover-placeholder.png" alt="Project Screenshot" />
+      <img src="cover-placeholder.png" alt="HR Attrition Dashboard Screenshot" />
       <h2>HR Attrition Analysis</h2>
       <p>Exploring employee attrition trends and patterns to support HR decision-making using Excel visualizations.</p>
-      <p><a href="#">View on GitHub</a> | <a href="#">View on Kaggle</a></p>
+      <p><a href="#">GitHub</a> <a href="#">Kaggle</a></p>
     </div>
   </section>
 
   <footer>
-    <p>Connect with me: <a href="#">GitHub</a> | <a href="#">Kaggle</a> | <a href="#">LinkedIn</a></p>
+    <p>Connect: <a href="#">GitHub</a> | <a href="#">Kaggle</a> | <a href="#">LinkedIn</a></p>
     <p>&copy; 2025 Pranjal Tiwari</p>
   </footer>
 </body>
